@@ -1,0 +1,38 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(;Test/compile; collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(Test/compile, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"1","parents":[]},"eventTime":1679055775874,"message":"Compiling root","dataKind":"compile-task","data":{"target":{"uri":"file:/C:/Users/emmam/ScalaTest/#root/Compile"}}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"1","parents":[]},"eventTime":1679055775914,"message":"Compiled root","status":1,"dataKind":"compile-report","data":{"target":{"uri":"file:/C:/Users/emmam/ScalaTest/#root/Compile"},"errors":0,"warnings":0,"time":40}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"2","parents":[]},"eventTime":1679055775936,"message":"Compiling root-test","dataKind":"compile-task","data":{"target":{"uri":"file:/C:/Users/emmam/ScalaTest/#root/Test"}}})[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\emmam\ScalaTest\target\scala-2.13\test-classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":3,"message":"compiling 1 Scala source to C:\\Users\\emmam\\ScalaTest\\target\\scala-2.13\\test-classes ..."})[0m
+[0m[[0m[0minfo[0m] [0m[0mNon-compiled module 'compiler-bridge_2.13' for Scala 2.13.10. Compiling...[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":3,"message":"Non-compiled module 'compiler-bridge_2.13' for Scala 2.13.10. Compiling..."})[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled notification received: textDocument/didOpen: JsonRpcNotificationMessage(2.0, textDocument/didOpen, {"textDocument":{"uri":"file:///c%3A/Users/emmam/ScalaTest/build.sbt","languageId":"scala","version":1,"text":"ThisBuild / version := \"0.1.0-SNAPSHOT\"\n\nThisBuild / scalaVersion := \"2.13.10\"\n\nval scalatestVersion = \"3.2.2\"\nlazy val root = (project in file(\".\"))\n  .settings(\n    name := \"ScalaTest\"\n  )\nlibraryDependencies ++= Seq(\n  // testing\n  \"org.scalactic\" %% \"scalactic\" % scalatestVersion,\n  \"org.scalatest\" %% \"scalatest\" % scalatestVersion % \"test\",\n\n)"}})[0m
+[0m[[0m[0mdebug[0m] [0m[0msymbol Int[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition locations Vector()[0m
+[0m[[0m[0mdebug[0m] [0m[0msymbol Calculator[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition locations Vector()[0m
+[0m[[0m[0minfo[0m] [0m[0m  Compilation completed in 11.393s.[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":3,"message":"  Compilation completed in 11.393s."})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/emmam/ScalaTest/src/test/scala/ScalatestingStyles.scala"},"buildTarget":{"uri":"file:/C:/Users/emmam/ScalaTest/#root/Test"},"diagnostics":[{"range":{"start":{"line":7,"character":0},"end":{"line":12,"character":1}},"severity":1,"source":"sbt","message":"Calculator is already defined as class Calculator"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\emmam\ScalaTest\src\test\scala\ScalatestingStyles.scala:8:7: Calculator is already defined as class Calculator[0m
+[0m[[0m[31merror[0m] [0m[0mclass Calculator {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"C:\\Users\\emmam\\ScalaTest\\src\\test\\scala\\ScalatestingStyles.scala:8:7: Calculator is already defined as class Calculator"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"class Calculator {"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"      ^"})[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"one error found"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/emmam/ScalaTest/src/test/scala/ScalatestingStyles.scala"},"buildTarget":{"uri":"file:/C:/Users/emmam/ScalaTest/#root/Test"},"diagnostics":[{"range":{"start":{"line":7,"character":0},"end":{"line":12,"character":1}},"severity":1,"source":"sbt","message":"Calculator is already defined as class Calculator"}],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"2","parents":[]},"eventTime":1679055789829,"message":"Compiled root-test","status":2,"dataKind":"compile-report","data":{"target":{"uri":"file:/C:/Users/emmam/ScalaTest/#root/Test"},"errors":1,"warnings":0,"time":13893}})[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched json error for requestId None: {"code":-32603,"message":"(Test / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"}[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"(Test / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"})[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 14 s, completed 17 Mar 2023, 12:23:09[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
